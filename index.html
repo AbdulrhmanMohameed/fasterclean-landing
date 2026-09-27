@@ -70,9 +70,12 @@
     letter-spacing:-.2px;
   }
   .brand-mark{
-    width:34px;
-    height:34px;
+    height:38px;
+    width:auto;
     flex:none;
+    display:block;
+    object-fit:contain;
+    border-radius:6px;
   }
   .brand-en{
     color:var(--ink-soft);
@@ -387,10 +390,7 @@
   <header>
     <div class="header-row">
       <div class="brand">
-        <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M6 14c4 6 10 6 14 0s10-6 14 0" stroke="#FF6A39" stroke-width="3" stroke-linecap="round"/>
-          <path d="M6 24c4 6 10 6 14 0s10-6 14 0" stroke="#0E2A38" stroke-width="3" stroke-linecap="round"/>
-        </svg>
+        <img class="brand-mark" src="https://github.com/AbdulrhmanMohameed/fasterclean-landing/blob/main/logo.jpg?raw=true" alt="شعار FasterClean">
         <span>FasterClean<span class="brand-en"> · فاستر كلين</span></span>
       </div>
       <div class="tag">استلام وتوصيل داخل الرياض</div>
@@ -424,29 +424,70 @@
   </section>
 
   <section class="process">
+    <h2>طريقة الطلب</h2>
     <div class="process-grid">
       <div class="step">
         <span class="num">01</span>
-        <h3>الاستلام</h3>
-        <p>تحدد لنا الوقت المناسب، ونمر على باب المنزل أو المكتب لاستلام الغسيل.</p>
+        <h3>اختر منتجاتك</h3>
+        <p>حدد القطع المطلوبة من الكتالوج على واتساب.</p>
       </div>
       <div class="step">
         <span class="num">02</span>
-        <h3>الغسيل والعناية</h3>
-        <p>كل قطعة تُفرز وتُعالج حسب نوع القماش، بمواد آمنة ونتيجة تدوم.</p>
+        <h3>حدد نوع الغسيل</h3>
+        <p>عادي أو مستعجل — حسب الوقت المتاح لديك.</p>
       </div>
       <div class="step">
         <span class="num">03</span>
-        <h3>التوصيل</h3>
-        <p>نوصّل الغسيل مكوياً ومطوياً في نفس اليوم، لباب منزلك مباشرة.</p>
+        <h3>أرسل الموقع</h3>
+        <p>موقع الاستلام والتوصيل، ونتولى الباقي من عندك.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="info-section">
+    <div class="info-grid">
+      <div>
+        <h2>مواعيد التوصيل</h2>
+        <div class="schedule">
+          <div class="schedule-row">
+            <span class="day">السبت – الخميس</span>
+            <span class="time">8:30 صباحًا – 11:00 مساءً</span>
+          </div>
+          <div class="schedule-row">
+            <span class="day">الجمعة</span>
+            <span class="time">2:00 ظهرًا – 11:00 مساءً</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>الغسيل المستعجل</h2>
+        <div class="notice">
+          <h3>مدة التنفيذ حسب الضغط</h3>
+          <p>يتوفر الغسيل المستعجل حسب ضغط العمل في المحل، ونبلغك بالمدة المتوقعة فور استلام طلبك.</p>
+        </div>
+        <div class="notice warn">
+          <h3>المفارش والسجاد</h3>
+          <p>لا يتوفر لها غسيل مستعجل، ومدة الغسيل لهذه القطع 24 ساعة.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="guarantee">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2 4 5v6c0 5 3.4 9 8 11 4.6-2 8-6 8-11V5l-8-3Z" stroke="#FF6A39" stroke-width="1.6" stroke-linejoin="round"/>
+        <path d="M9 12l2 2 4-4" stroke="#0E2A38" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div>
+        <h3>ملابسك في أمان</h3>
+        <p>نتعامل مع كل طلب بعناية، وفي حال فقدان قطعة أو تعرضها للتلف، نلتزم بتعويضك بكامل قيمتها.</p>
       </div>
     </div>
   </section>
 
   <section class="band">
     <div>
-      <h2>جاهزين نستلم غسيلك اليوم</h2>
-      <p>راسلنا على واتساب وحدد موعد الاستلام اللي يناسبك.</p>
+      <h2>لا تجينا… حنا نجيك</h2>
+      <p>أرسل طلبك وموقعك، وفريق FasterClean بخدمتك.</p>
     </div>
     <a href="https://wa.me/966580237086" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
       <svg viewBox="0 0 24 24" fill="currentColor">
